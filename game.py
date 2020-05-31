@@ -8,7 +8,6 @@ Tries = 0
 user_Score = 0
 coumputer_Score = 0
 
-
 while Tries <= 3:
     user_input = input("Enter your choice!: ")
     computer_input = random.choice(Things)
