@@ -1,8 +1,6 @@
 import random
 
-Things = ['r', 'p', 's']
-
-print("Use r for rock, p for paper and s for scissors")
+Things = ['rock', 'paper', 'scissor']
 
 Tries = 0
 user_Score = 0
@@ -12,37 +10,37 @@ while Tries <= 3:
     user_input = input("Enter your choice!: ")
     computer_input = random.choice(Things)
     if user_input in Things:
-        if user_input == "r" and computer_input == "s":
+        if user_input == "rock" and computer_input == "scissor":
             print("Computer choose " + computer_input)
             print("You got a point")
             print("\n")
             user_Score += 1
             Tries += 1
-        elif user_input == "r" and computer_input == "p":
+        elif user_input == "rock" and computer_input == "paper":
             print("Computer choose " + computer_input)
             print("Computer got a point!")
             print("\n")
             coumputer_Score += 1
             Tries += 1
-        elif user_input == "p" and computer_input == "r":
+        elif user_input == "paper" and computer_input == "rock":
             print("Computer choose " + computer_input)
             print("You got a point")
             print("\n")
             user_Score += 1
             Tries += 1
-        elif user_input == "p" and computer_input == "s":
+        elif user_input == "paper" and computer_input == "scissor":
             print("Computer choose " + computer_input)
             print("Computer got a point!")
             print("\n")
             coumputer_Score += 1
             Tries += 1	
-        elif  user_input == "s" and computer_input == "p":
+        elif  user_input == "scissor" and computer_input == "paper":
             print("Computer choose " + computer_input)
             print("You got a point")
             print("\n")
             user_Score += 1
             Tries += 1
-        elif  user_input == "s" and computer_input == "r":
+        elif  user_input == "scissor" and computer_input == "rock":
             print("Computer choose " + computer_input)
             print("Computer got a point!")
             print("\n")
